@@ -5,6 +5,7 @@ require 'yaml'
 # Return quotes and truths about the great Roberto Barros
 class Help
   DATA = YAML.load_file(File.join(__dir__, 'data.yml'))
+  HIHY = 'Hope I helped you! :)'
 
   def self.puts_data_splitting_by_newline(data)
     puts
@@ -21,7 +22,7 @@ class Help
   def self.me
     data = DATA['steps'].sample
     puts_data_splitting_by_newline(data)
-    'Hope I helped you!'
+    HIHY
   end
 
   def self.specific_quote(word)
@@ -32,24 +33,27 @@ class Help
         found_data = true
       end
     end
-    found_data ? 'Hope I helped you!' : 'Sorry, I couldnt find any quote with that word'
+    found_data ? HIHY : 'Sorry, I couldnt find any quote with that word'
   end
 
   def self.all_quotes
     DATA['steps'].each do |row|
       puts_data_splitting_by_newline(row)
     end
+    HIHY
   end
 
   def self.sublime_extensions
     DATA['sublime'].each do |row|
       puts_data_splitting_by_newline(row)
     end
+    HIHY
   end
 
   def self.vscode_extensions
     DATA['vscode'].each do |row|
       puts_data_splitting_by_newline(row)
     end
+    HIHY
   end
 end
