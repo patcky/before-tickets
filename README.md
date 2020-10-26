@@ -10,7 +10,7 @@ Gem that describes some steps to try before opening a ticket
 
 On `irb` or on your code:
 
-    require before_tickets  
+    require 'before_tickets'  
     
     Help.me
 

@@ -10,5 +10,5 @@ steps: [
     "Steps: 'git add .', 'git commit -m suamensagemaqui', 'git push' (se ele reclamar do git push, lê a mensagem, as vezes precisa fazer 'git push origin master' e as vezes precisa fazer o comando de 'git push --set-upstream origin NOMEDABRANCH')",
     "No Heroku não tem rails db:drop, então se precisar dropar e recriar o banco lá, o comando é 'heroku restart && heroku pg:reset DATABASE && heroku run rails db:migrate && heroku run rails db:seed' (ATENÇÃO: não altere o código, só copie e cole)",
     "Dúvida frequente: 'Na config do Cloudinary (ou outras APIs que exigem key), eu posso colocar a minha chave? Vai funcionar para todo mundo do grupo?' RESPOSTA: 'Sim, é só colocar no .env e depois passar pro resto do grupo.'",
-    "Já se inscreveu no canal do grande @Roberto Barros? link: https://www.youtube.com/channel/UCNmBDdpZ1NsONHIjYmjpFDQ"
-    ]
+    "Já se inscreveu no canal do grande @Roberto Barros? link: https://www.youtube.com/channel/UCNmBDdpZ1NsONHIjYmjpFDQ",
+]
