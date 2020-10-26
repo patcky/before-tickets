@@ -7,8 +7,90 @@ steps: [
     "Hmmm talvez um 'rails db:schema:load'?",
     "Já deu um 'git pull origin master'?",
     "Não esquece de commitar!!",
-    "Steps: 'git add .', 'git commit -m suamensagemaqui', 'git push' (se ele reclamar do git push, lê a mensagem, as vezes precisa fazer 'git push origin master' e as vezes precisa fazer o comando de 'git push --set-upstream origin NOMEDABRANCH')",
-    "No Heroku não tem rails db:drop, então se precisar dropar e recriar o banco lá, o comando é 'heroku restart && heroku pg:reset DATABASE && heroku run rails db:migrate && heroku run rails db:seed' (ATENÇÃO: não altere o código, só copie e cole)",
-    "Dúvida frequente: 'Na config do Cloudinary (ou outras APIs que exigem key), eu posso colocar a minha chave? Vai funcionar para todo mundo do grupo?' RESPOSTA: 'Sim, é só colocar no .env e depois passar pro resto do grupo.'",
-    "Já se inscreveu no canal do grande @Roberto Barros? link: https://www.youtube.com/channel/UCNmBDdpZ1NsONHIjYmjpFDQ",
+    "Git steps: \n
+        'git add .', 
+        'git commit -m suamensagemaqui', 
+        'git push' 
+        (se ele reclamar do git push, lê a mensagem, as vezes precisa fazer 'git push origin master' e as vezes precisa fazer o comando de 'git push --set-upstream origin NOMEDABRANCH') \n
+        Se quiser fazer tudo na mesma linha, fica: 'ga && gc -m suamensagemaqui && gp'",
+    "No Heroku não tem rails db:drop, então se precisar dropar e recriar o banco lá, o comando é: \n
+        'heroku restart && heroku pg:reset DATABASE && heroku run rails db:migrate && heroku run rails db:seed' \n
+        (ATENÇÃO: não altere o código, só copie e cole)",
+    "Dúvida frequente: \n
+        P: 'Na config do Cloudinary (ou outras APIs que exigem key), eu posso colocar a minha chave? Vai funcionar para todo mundo do grupo?' \n
+        R: 'Sim, é só colocar no .env e depois passar pro resto do grupo.'",
+    "Já se inscreveu no canal do grande @Roberto Barros? \n
+        link: https://www.youtube.com/channel/UCNmBDdpZ1NsONHIjYmjpFDQ",
+    "Já leu a documentação?",
+    "Pesquisou no Google?",
+    "Olhou no Stackoverflow?",
+    "Rodou um 'git status' pra ver o que ele mostra?",
+    "Já fez o deploy no Heroku? NÃO DEIXA PRO ÚLTIMO DIA, SE NÃO VAI QUEBRAR TUDO!!!",
+    "Olhou os logs no 'heroku logs -t'?",
+    "Abre um 'rails c' aí",
+    "Não ta funcionando? Joga uns print aí no meio e vamos ver o que sai :)",
+    "Põe um pry aí no meio. Não lembra como faz? \n
+        'gem install pry-byebug' \n
+        # instala a gem \n
+        'require 'pry-byebug'' \n
+        # dá um require no topo do seu arquivo \n
+        'binding.pry' \n
+        # bota isso aonde vc quer que pare no código, vai abrir no terminal \n
+        Se estiver no rails, tem que botar na gemfile e rodar um bundle install.",
+    "-quote- O Hover é pra isso! -endquote-",
+    "Dúvidas frequentes: \n
+        P: 'como gera model no rails mesmo?' \n
+        R: exemplo: rails generate model User username:string password:string \n
+        (o model é no singular) \n
+        - \n
+        P: 'como gera controller no rails mesmo?' \n
+        R: exemplo: rails generate controller Users new create edit destroy \n
+        (o controller é no plural)",
+]
+sublime: [
+    "Sublime \n
+        https://www.sublimetext.com/3 \n
+        Como instalar extensões: \n
+        Primeiro, instalar o Package Control \n
+        Win/Linux: ctrl+shift+p, Mac: cmd+shift+p \n
+        Digitar Install Package Control, pressionar enter \n
+        Com o Package Control instalado: \n
+        Win/Linux: ctrl+shift+p, Mac: cmd+shift+p \n
+        Package Control: Install Package \n
+        Extensões recomendadas: \n
+        Emmet \n
+        SASS \n
+        BracketHighlighter \n
+        ColorPicker \n
+        A File Icon \n
+        SublimeGit \n
+        AutoFileName \n
+        Emmet doc (atalhos de autocomplete): \n
+        https://docs.emmet.io/abbreviations/syntax/ \n
+        Atalhos gerais: \n
+        https://shortcuts.design/toolspage-sublimetext.html",
+]
+vscode: [
+    "VSCode \n
+        https://code.visualstudio.com/download \n
+        Como instalar extensões: \n
+        Win/Linux: ctrl+shift+x, Mac: cmd+shift+x \n
+        Extensões recomendadas: \n
+        coenraads.bracket-pair-colorizer \n
+        ecmel.vscode-html-css \n
+        vscode-icons-team.vscode-icons \n
+        anseki.vscode-color \n
+        mhutchie.git-graph \n
+        waderyan.gitblame \n
+        shaharkazaz.git-merger \n
+        zainchen.json \n
+        vortizhe.simple-ruby-erb \n
+        bung87.rails \n
+        wingrunr21.vscode-ruby \n
+        misogi.ruby-rubocop \n
+        bung87.vscode-gemfile \n
+        redhat.vscode-xml \n
+        Atalhos do VS Code: \n
+        Mac: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf \n
+        Windows/Linux: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf",
 ]

@@ -12,7 +12,27 @@ On `irb` or on your code:
 
     require 'before_tickets'  
     
-    Help.me
+### Methods
+
+- Prints a random quote, wich might or not be useful:
+
+        Help.me
+
+- Receives a word as parameter and searches for quotes with that word, printing them:
+
+        Help.specific_quote("word")
+
+- Prints all quotes:
+
+        Help.all_quotes
+
+- Prints the list of recommended Sublime extensions:
+
+        Help.sublime_extensions
+
+- Prints the list of recommended Sublime extensions:
+
+        Help.vscode_extensions
 
 ## Didn't work? Open a ticket! ;)  
 
