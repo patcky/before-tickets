@@ -1,6 +1,7 @@
 # before-tickets
 
-Gem that describes some steps to try before opening a ticket
+Gem that describes some steps to try before opening a ticket, printing them for you. 
+Maybe it helps you, maybe not.
 
 ## Instalation
 
@@ -14,7 +15,7 @@ On `irb` or on your code:
     
 ### Methods
 
-- Prints a random quote, wich might or not be useful:
+- Prints a random quote, which might or not be useful:
 
         Help.me
 
