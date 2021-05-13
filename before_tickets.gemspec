@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name        = 'before_tickets'
-  s.version     = '0.0.0'
-  s.date        = '2020-10-26'
+  s.version     = '1.0.0'
+  s.date        = '2021-05-13'
   s.summary     = 'What should I do before opening a ticket?'
   s.description = 'A gem that states some steps for you to try before opening'\
  ' a ticket.'

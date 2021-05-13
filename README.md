@@ -9,31 +9,17 @@ Maybe it helps you, maybe not.
 
 ## Usage
 
-On `irb` or on your code:
-
-    require 'before_tickets'  
+On `irb` or on your code: `require 'before_tickets'`
     
 ### Methods
 
-- Prints a random quote, which might or not be useful:
-
-        Help.me
-
-- Receives a word as parameter and searches for quotes with that word, printing them:
-
-        Help.specific_quote("word")
-
-- Prints all quotes:
-
-        Help.all_quotes
-
-- Prints the list of recommended Sublime extensions:
-
-        Help.sublime_extensions
-
-- Prints the list of recommended Sublime extensions:
-
-        Help.vscode_extensions
+- Prints a random quote, which might or not be useful: `Help.me`
+- Receives a word as parameter and searches for quotes with that word, printing them: `Help.search("word")`
+- Prints all quotes: `Help.all`
+- Shows the magic steps for debugging your local rails project: `MagicSteps.local`
+- Shows the magic steps for debugging your rails project on Heroku: `MagicSteps.heroku`
+- Prints the list of recommended Sublime extensions: `Extensions.sublime`
+- Prints the list of recommended Sublime extensions: `Extensions.vscode`
 
 ## Didn't work? Open a ticket! ;)  
 
