@@ -46,6 +46,7 @@ steps: [
         P: 'como gera controller no rails mesmo?' \n
         R: exemplo: rails generate controller Users new create edit destroy \n
         (o controller é no plural)",
+     "Já reiniciou o servidor?",
 ]
 sublime: [
     "Sublime \n
@@ -93,4 +94,21 @@ vscode: [
         Atalhos do VS Code: \n
         Mac: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf \n
         Windows/Linux: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf",
+]
+magic-steps: [
+    "Passos mágicos que resolvem 99% dos problemas: \n
+    - rails s (reiniciar servidor) \n
+    - bundle install \n
+    - yarn install --check-files \n
+    - rails db:drop && rails db:create && rails db:migrate && rails db:seed \n
+    - checar as variáveis de ambiente - arquivo .env deve estar igual para tds do grupo, mas não deve estar no repositório do Github \n
+    - rails s (reiniciar servidor de novo, depois de fazer esses passos) \n",
+]
+magic-steps-heroku: [
+    "Passos mágicos que resolvem 99% dos problemas (no Heroku): \n
+    - heroku run bundle install \n
+    - heroku run yarn install --check-files \n
+    - heroku restart && heroku pg:reset DATABASE && heroku run rails db:migrate && heroku run rails db:seed \n
+    - checar as variáveis de ambiente - no Heroku não tem .env, então tem que configurar as variáveis de ambiente usando 'heroku config:set NOMEDACHAVE=xxx'. \n
+    Pra ter certeza que a varável está lá depois de configurar, vc pode acessar usando 'heroku config:get NOMEDACHAVE'.",
 ]
